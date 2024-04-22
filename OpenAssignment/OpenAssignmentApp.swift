@@ -11,7 +11,7 @@ import SwiftUI
 struct OpenAssignmentApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            homeView()
         }
     }
 }

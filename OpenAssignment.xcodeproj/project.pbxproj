@@ -11,6 +11,10 @@
 		BFADB9852BC907C700F2EA97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFADB9842BC907C700F2EA97 /* ContentView.swift */; };
 		BFADB9872BC907CA00F2EA97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFADB9862BC907CA00F2EA97 /* Assets.xcassets */; };
 		BFADB98B2BC907CA00F2EA97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFADB98A2BC907CA00F2EA97 /* Preview Assets.xcassets */; };
+		BFADB9972BC93CF300F2EA97 /* homeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFADB9962BC93CF200F2EA97 /* homeView.swift */; };
+		BFADB9992BC93D0500F2EA97 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFADB9982BC93D0500F2EA97 /* HomeViewModel.swift */; };
+		BFADB99C2BC93E6900F2EA97 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFADB99B2BC93E6900F2EA97 /* Model.swift */; };
+		BFADB99F2BC9431700F2EA97 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFADB99E2BC9431700F2EA97 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		BFADB9862BC907CA00F2EA97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFADB9882BC907CA00F2EA97 /* OpenAssignment.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenAssignment.entitlements; sourceTree = "<group>"; };
 		BFADB98A2BC907CA00F2EA97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BFADB9962BC93CF200F2EA97 /* homeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeView.swift; sourceTree = "<group>"; };
+		BFADB9982BC93D0500F2EA97 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		BFADB99B2BC93E6900F2EA97 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		BFADB99E2BC9431700F2EA97 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,9 @@
 		BFADB9812BC907C700F2EA97 /* OpenAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				BFADB99D2BC942FF00F2EA97 /* Extension */,
+				BFADB99A2BC93E5A00F2EA97 /* Model */,
+				BFADB9942BC93CCE00F2EA97 /* Views */,
 				BFADB9822BC907C700F2EA97 /* OpenAssignmentApp.swift */,
 				BFADB9842BC907C700F2EA97 /* ContentView.swift */,
 				BFADB9862BC907CA00F2EA97 /* Assets.xcassets */,
@@ -67,6 +78,39 @@
 				BFADB98A2BC907CA00F2EA97 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BFADB9942BC93CCE00F2EA97 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BFADB9952BC93CDF00F2EA97 /* HomeView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BFADB9952BC93CDF00F2EA97 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				BFADB9962BC93CF200F2EA97 /* homeView.swift */,
+				BFADB9982BC93D0500F2EA97 /* HomeViewModel.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		BFADB99A2BC93E5A00F2EA97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFADB99B2BC93E6900F2EA97 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFADB99D2BC942FF00F2EA97 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BFADB99E2BC9431700F2EA97 /* Color.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +184,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFADB9852BC907C700F2EA97 /* ContentView.swift in Sources */,
+				BFADB9972BC93CF300F2EA97 /* homeView.swift in Sources */,
+				BFADB99F2BC9431700F2EA97 /* Color.swift in Sources */,
 				BFADB9832BC907C700F2EA97 /* OpenAssignmentApp.swift in Sources */,
+				BFADB99C2BC93E6900F2EA97 /* Model.swift in Sources */,
+				BFADB9992BC93D0500F2EA97 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OpenAssignment/Preview Content\"";
+				DEVELOPMENT_TEAM = 8ACASK54TM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -282,6 +331,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -306,6 +356,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OpenAssignment/Preview Content\"";
+				DEVELOPMENT_TEAM = 8ACASK54TM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -318,6 +369,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
